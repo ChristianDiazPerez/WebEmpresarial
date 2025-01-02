@@ -1,0 +1,148 @@
+/*PALETA DE COLORES*/
+.color-fondo{
+    background-color: #EAEAEA ; /*EAEAEA */
+}
+.color-bloque{
+    background-color: #CCCCCC ; /*C6C6C6 */
+}
+.color-contenedor{
+    background-color: #EAEAEA ;/*EAEAEA*/
+}
+h1{
+    color: #0078D4;
+}
+h2{
+    color: #005A9C;
+}
+h3{
+    color: #1A3C69;
+}
+
+.color-enfasis-1{
+    color: #4557BF; /*Color de la fuente*/
+}
+.color-enfasis-2{
+    color: #4557BF; /*Color de la fuente*/
+}
+
+
+
+/*******************/
+*{
+    color: #333333;
+}
+body{
+    font-size: 115%;
+    font-family: 'Roboto', sans-serif;
+}
+.cabecera{
+    display: grid;
+    grid-template-columns: 1fr 1.618fr;
+    height: auto;
+    padding: 2% 2%;
+    
+}
+.logo-cabecera{
+    grid-column: 1;
+    grid-row: 1;
+    height: auto;
+    height: 100px;
+    margin: auto;
+}
+.titulo-cabecera{
+    grid-column: 2;
+    grid-row: 1;
+    margin: auto 5%;
+    font-size: 400%;
+}
+.titulo-cabecera.h1{
+    font-family: 'poppins', sans-serif;
+}
+.presentacion{
+    margin: 1% 0%;
+    padding: 1px;
+}
+.presentacion.h1{
+    text-align: center;
+}
+.presentacion-texto{
+    justify-self: center;
+
+}
+.servicios{
+    margin: 1% 0%;
+    padding: 1px;
+}
+.bloque-servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contenedor {
+    height: auto;
+    margin: 1% 1%;
+}
+h2{
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+}
+h3{
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+}
+.contenedor{
+    padding: 3%;
+}
+.contacto{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 30px;
+    color: transparent; /*Color del enlace, transparente, en algunos iconos aparece una linea de color, error por solucionar */
+}
+
+.links a i {
+    font-size: 3rem;   /*Tamaño del link y de la imagen*/
+}
+
+.texto-link-1{
+    font-size: 15px;
+    text-align: right;
+    position: absolute; /*Para que no afecte a la posicion de los demás iconos*/
+    padding-top: 10px;
+    margin: 5px 0px;
+}
+
+.texto-link-2{
+    font-size: 15px;
+    text-align: center;
+    position: absolute; /*Para que no afecte a la posicion de los demás iconos*/
+    padding-top: 10px;
+    margin: 5px 15px;
+}
+
+
+@media (max-width: 700px){
+    .cabecera{
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .logo-cabecera{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .titulo-cabecera{
+        grid-column: 1;
+        grid-row: 2;
+        font-size: 300%;
+    }
+    .bloque-servicios{
+        grid-template-columns: 1fr;
+    }
+}
