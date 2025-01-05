@@ -159,4 +159,13 @@ h3{
     .bloque-servicios{
         grid-template-columns: 1fr;
     }
+    .presentacion{
+        margin: 10% 0;
+    }
+    .servicios{
+        margin: 10% 0;
+    }
+    .contacto{
+        margin: 10% 0;
+    }
 }
