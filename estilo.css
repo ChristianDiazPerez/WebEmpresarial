@@ -1,9 +1,9 @@
 /*PALETA DE COLORES*/
 .color-fondo{
-    background-color: #EAEAEA ; /*EAEAEA */
+    background-color: #EAEAEA ; 
 }
 .color-bloque{
-    background-color: #CCCCCC ; /*C6C6C6 */
+    background-color: #CCCCCC ; 
 }
 .color-contenedor{
     background-color: #EAEAEA ;/*EAEAEA*/
@@ -80,6 +80,17 @@ body{
 .contenedor {
     height: auto;
     margin: 1% 1%;
+}
+.contenedor:hover{
+    background-color: #1A3C69;
+    
+    p{
+        color: #EAEAEA;
+    }
+    h3{
+        color: #0078D4;
+    }
+
 }
 h2{
     text-align: center;
