@@ -82,12 +82,12 @@ body{
     margin: 1% 1%;
 }
 .contenedor:hover{
-    background-color: #b2c7d6;
+    background-color: #1A3C69;
     transition: background-color 0.3s;
     border: 4px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    p{
-        font-weight: bold;
+    p,h3{
+        color: #EAEAEA;
     }
     
 
