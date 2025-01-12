@@ -152,6 +152,7 @@ h3{
     .cabecera{
         grid-template-columns: 1fr;
         height: auto;
+        margin: 0% 2%;
     }
     .logo-cabecera{
         grid-column: 1;
