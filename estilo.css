@@ -108,6 +108,20 @@ h3{
 .contenedor{
     padding: 3%;
 }
+.muestra-imagenes{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+
+ grid-template-columns: 1fr 1fr 1fr;
+ img{
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    }   
+}
+
 
 /*CONTACTO*/
 .contacto{
@@ -145,7 +159,16 @@ h3{
 .pie-de-pagina{
     height: 40px;
 }
-
+/*Plataformas grandes*/
+main{
+    max-width: 1930px;
+    margin: 0 auto;
+}
+@media (min-width: 1600px){
+    .muestra-imagenes{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
 /*PLATAFORMAS MOVILES*/
 @media (max-width: 700px){
     .cabecera{
