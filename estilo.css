@@ -8,26 +8,11 @@
 .color-contenedor{
     background-color: #EAEAEA ;/*EAEAEA*/
 }
-h1{
-    color: #0078D4;
-}
-h2{
-    color: #005A9C;
-}
-h3{
-    color: #1A3C69;
+.color-foother{
+    background-color: #091423;
 }
 
-.color-enfasis-1{
-    color: #4557BF; /*Color de la fuente*/
-}
-.color-enfasis-2{
-    color: #4557BF; /*Color de la fuente*/
-}
-
-
-
-/*******************/
+/*GENERAL DE LA PÁGINA*/
 *{
     color: #333333;
 }
@@ -36,6 +21,21 @@ body{
     font-family: 'Roboto', sans-serif;
     margin: 0 0;
 }
+h1{
+    color: #0078D4;
+}
+h2{
+    color: #005A9C;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+}
+h3{
+    color: #1A3C69;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+}
+
+/*CABECERA*/
 .cabecera{
     display: grid;
     grid-template-columns: 1fr 1.618fcr;
@@ -61,7 +61,8 @@ body{
 .titulo-cabecera.h1{
     font-family: 'poppins', sans-serif;
 }
-.presentacion{
+/*BLOQUES quienes somos y portafolio*/
+.bloque{
     margin: 1% 0%;
     padding: 1px;
     p{
@@ -69,13 +70,15 @@ body{
     }
     
 }
-.presentacion.h1{
+.bloque.h1{
     text-align: center;
 }
-.presentacion-texto{
+.bloque-texto{
     justify-self: center;
 
 }
+
+/*SERVICIOS*/
 .servicios{
     margin: 3% 0%;
     padding: 1px;
@@ -102,17 +105,11 @@ body{
     
 
 }
-h2{
-    text-align: center;
-    font-family: 'poppins', sans-serif;
-}
-h3{
-    text-align: center;
-    font-family: 'poppins', sans-serif;
-}
 .contenedor{
     padding: 3%;
 }
+
+/*CONTACTO*/
 .contacto{
     text-align: center;
     margin-bottom: 5%;
@@ -122,16 +119,13 @@ h3{
     align-items: center;
     justify-content: center;
 }
-
 .links a {
     margin: 0 30px;
     color: transparent; /*Color del enlace, transparente, en algunos iconos aparece una linea de color, error por solucionar */
 }
-
 .links a i {
     font-size: 3rem;   /*Tamaño del link y de la imagen*/
 }
-
 .texto-link-1{
     font-size: 15px;
     text-align: right;
@@ -139,7 +133,6 @@ h3{
     padding-top: 10px;
     margin: 5px 0px;
 }
-
 .texto-link-2{
     font-size: 15px;
     text-align: center;
@@ -148,7 +141,12 @@ h3{
     margin: 5px 15px;
 }
 
+/*PIE DE PAGINA*/
+.pie-de-pagina{
+    height: 40px;
+}
 
+/*PLATAFORMAS MOVILES*/
 @media (max-width: 700px){
     .cabecera{
         grid-template-columns: 1fr;
