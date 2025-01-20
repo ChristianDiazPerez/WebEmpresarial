@@ -9,7 +9,7 @@
     background-color: #EAEAEA ;/*EAEAEA*/
 }
 .color-foother{
-    background-color: #1A3C69;
+    background-color: #333333;
 }
 .color-boton{
     background-color: #F2AC29;
@@ -194,6 +194,24 @@ h3{
 /*PIE DE PAGINA*/
 .pie-de-pagina{
     height: 40px;
+    font-size: 12px;
+    padding: 10px 0;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    p{
+        color: #8d8d8d;
+        margin: auto auto;
+        display: block;
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        unicode-bidi: isolate;
+    }
+    
 }
 /*Plataformas grandes*/
 main{
