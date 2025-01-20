@@ -146,10 +146,12 @@ h3{
     color: rgb(255, 255, 255);
     font-size: 15px;
     border: 1px solid #ffff;
+    text-decoration: none; /*El texto del enlace no salga subrayado*/
     
     i{
         color: rgb(255, 255, 255);
-        margin-left: 10px;
+        margin-left: 5px;
+        
     }
     
     
