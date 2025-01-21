@@ -272,11 +272,14 @@ main{
     height: 100%;
     background: rgba(0 0 0 / 90%);
     display: none;
+    
   }
   .lightbox.active {
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    
   }
   .lightbox__close {
     position: absolute;
