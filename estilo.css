@@ -287,11 +287,12 @@ main{
     cursor: pointer;
     border-radius: 50%;
     border: none;
+    background-color: #ff5a5a;
   }
   
   .lightbox img {
-    max-height: 100%;
-    max-width: 100%;
+    max-height: auto;
+    max-width: auto;
   }
   
   .overflow-hidden {
