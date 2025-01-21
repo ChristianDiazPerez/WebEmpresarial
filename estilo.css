@@ -292,7 +292,7 @@ main{
   
   .lightbox img {
     max-height: auto;
-    max-width: auto;
+    max-width: 100%;
   }
   
   .overflow-hidden {
