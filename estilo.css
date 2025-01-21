@@ -129,6 +129,7 @@ h3{
         transition: background-color 0.3s;
         border: 10px;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
 }
 
 }
@@ -272,13 +273,11 @@ main{
     background: rgba(0 0 0 / 90%);
     display: none;
   }
-  
   .lightbox.active {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
   .lightbox__close {
     position: absolute;
     top: 20px;
@@ -290,13 +289,16 @@ main{
     border-radius: 50%;
     border: none;
     background-color: #ff4040;
+    color: #ffffff; /*color de la x*/
+    font-weight: bold; /*X en negrita*/
   }
-  
   .lightbox img {
     max-height: auto;
     max-width: 100%;
   }
-  
   .overflow-hidden {
     overflow: hidden;
   }
+
+/*****************/
+  
