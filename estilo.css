@@ -18,6 +18,7 @@
 /*GENERAL DE LA PÁGINA*/
 *{
     color: #333333;
+    
 }
 body{
     font-size: 115%;
@@ -41,33 +42,82 @@ h3{
 /*CABECERA*/
 .cabecera{
     display: grid;
-    grid-template-columns: 1fr 1.618fcr;
+    grid-template-columns: 1fr 1.618fr;
     height: auto;
-    padding-top: 46px;
-    padding-bottom: 46px;
-    
-    
+    width: 100%;
+    margin-bottom: 46px;
 }
-.logo-cabecera{
-    grid-column: 1;
-    grid-row: 1;
-    height: 120px;
-    margin: auto;
-}
-.titulo-cabecera{
+
+.logo-grande{
+    height: 120px;/*120px*/
+    width: auto;
     grid-column: 1/3;
     grid-row: 1;
-    
-    font-size: 400%;
-    height: 120px;
     margin: 0 auto;
+    margin-top: 28px;
+    margin-bottom: 28px;
 }
+
 .titulo-cabecera.h1{
     font-family: 'poppins', sans-serif;
 }
+.barra-navegacion{
+    grid-column: 1/3;
+    height: auto;
+    width: 100%;
+    background-color: #CCCCCC;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+.menu{
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.enlace{
+    cursor: pointer;
+    background-color: #333333;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    li{
+        
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
+.enlace:hover{
+    background-color: #1A3C69;
+}
+.enlace_1{
+    margin-right: 3%;
+    background-color: #1A3C69; /*Nos encontramos en esta*/
+}
+.enlace_2{
+    
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #CCCCCC; 
+}
+
+ul{
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+
 /*BLOQUES quienes somos y portafolio*/
 .bloque{
-    margin: 1% 0%;
+    margin-bottom: 46px;
     padding: 1px;
     p{
         margin: 2% 5%;
@@ -222,41 +272,62 @@ main{
     max-width: 1930px;
     margin: 0 auto;
 }
+
+/*PLATAFORMAS MOVILES*/
 @media (min-width: 1600px){
     .muestra-imagenes{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
-/*PLATAFORMAS MOVILES*/
+
 @media (max-width: 700px){
     .cabecera{
-        grid-template-columns: 1fr;
         height: auto;
-        margin: 0% 2%;
     }
-    .logo-cabecera{
-        grid-column: 1;
-        grid-row: 1;
+    .logo-grande{
+        height: auto;/*120px*/
+        width: 98vw;
+        
     }
+    
     .titulo-cabecera{
         grid-column: 1;
         grid-row: 1/3;
         width: 100%;
         height: auto;
         font-size: 300%;
-
     }
+    .menu{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .enlace_1{
+        margin-bottom: 3%;
+    }
+
+        
+    
     .bloque-servicios{
         grid-template-columns: 1fr;
+        
+    }
+    .muestra-imagenes{
+            
+        width: 100%;
+        margin: 0 auto;
     }
     .presentacion{
-        margin: 10% 0;
+        margin-bottom: 10%;
     }
     .servicios{
-        margin: 10% 0;
+        margin-bottom: 10%;
     }
     .contacto{
-        margin: 10% 0;
+        margin-bottom: 10%;
+        
     }
 }
 
