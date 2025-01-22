@@ -79,6 +79,7 @@ h3{
 }
 .enlace{
     cursor: pointer;
+    text-decoration: none;
     background-color: #333333;
     height: 46px;
     display: flex;
