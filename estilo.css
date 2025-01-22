@@ -102,10 +102,12 @@ h3{
 .enlace_2{
     
 }
-a{
+.enlace p{
     text-decoration: none;
     font-weight: bold;
     color: #CCCCCC; 
+    white-space: nowrap; /*Que el texto esté en una linea*/
+
 }
 
 ul{
