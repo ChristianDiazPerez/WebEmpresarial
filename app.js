@@ -83,7 +83,7 @@ if (images) {
   });
 }
 
-//TRANSICIÓN SUAVE ENTRE PÁGINAS
+//TRANSICION SUAVE ENTRE PAGINAS
 document.addEventListener('DOMContentLoaded', () => {
   // Función para aplicar el fade-out (desvanecimiento) al main
   function fadeOut() {
