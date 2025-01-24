@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Cambia el color de fondo del elemento
     if (elemento) {
-      elemento.style.backgroundColor = '#333333'; // Cambia el color de fondo a gris oscuro
+      elemento.style.backgroundColor = '#F2AC29'; // Cambia el color de fondo a gris oscuro
     } else {
       console.log("Elemento no encontrado.");
     }
