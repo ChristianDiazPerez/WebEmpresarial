@@ -26,15 +26,21 @@ body{
     margin: 0 0;
 }
 h1{
-    color: #0078D4;
+    color: #1A3C69;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
 }
 h2{
-    color: #005A9C;
+    color: #1A3C69;
     text-align: center;
     font-family: 'poppins', sans-serif;
 }
 h3{
     color: #1A3C69;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+}
+h4{
     text-align: center;
     font-family: 'poppins', sans-serif;
 }
@@ -80,7 +86,7 @@ h3{
 .enlace{
     cursor: pointer;
     text-decoration: none;
-    background-color: #333333;
+    /*background-color: #333333;*/
     height: 46px;
     display: flex;
     justify-content: center;
@@ -93,12 +99,14 @@ h3{
         margin-right: 3%;
     }
 }
+/*
 .enlace:hover{
     background-color: #1A3C69;
     p{
         color: #EAEAEA; 
     }
 }
+*/
 .enlace_1{
     margin-right: 3%;
 }

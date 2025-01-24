@@ -1,4 +1,19 @@
-//Cabecera pegajosa
+//BARRA NAVEGACION. En desarrollo!!
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.location.href.includes('index.html')) {
+    const elemento = document.getElementById('enlace_2'); // Selecciona el elemento con el ID 'holahola'
+    
+    // Cambia el color de fondo del elemento
+    if (elemento) {
+      elemento.style.backgroundColor = '#333333'; // Cambia el color de fondo a gris oscuro
+    } else {
+      console.log("Elemento no encontrado.");
+    }
+  }
+});
+
+//CABECERA PEGAJOSA. En desarrollo!!
 var header = document.getElementById('Header')
 
 window.addEventListener("scroll", function(){
@@ -13,7 +28,7 @@ window.addEventListener("scroll", function(){
 
 })
 
-//Ligh box
+//LIGH BOX
 const images = document.querySelectorAll("img[data-lightbox]");
 
 if (images) {
