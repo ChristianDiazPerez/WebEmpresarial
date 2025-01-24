@@ -1,16 +1,33 @@
 //BARRA NAVEGACION. En desarrollo!!
 
 document.addEventListener('DOMContentLoaded', () => {
-  if (window.location.href.includes('index.html')) {
-    const elemento = document.getElementById('enlace_2'); // Selecciona el elemento con el ID 'holahola'
-    
-    // Cambia el color de fondo del elemento
-    if (elemento) {
-      elemento.style.backgroundColor = '#F2AC29'; // Cambia el color de fondo a gris oscuro
-    } else {
-      console.log("Elemento no encontrado.");
+//Al encontrarnos en:
+  //index 
+    if (window.location.href.includes('index.html')) {
+      const elemento1 = document.getElementById('enlace_1');
+      const parrafo1 = elemento1.querySelector('p'); 
+      
+      if (elemento1) {
+        elemento1.style.backgroundColor = '#1A3C69'; //Color del boton
+        parrafo1.style.color = '#FFFFFF'; // color del texto
+
+      } else {
+        console.log("Elemento no encontrado.");
+      }
     }
-  }
+
+   //Portafolio  
+    if (window.location.href.includes('portafolio.html')) {
+      const elemento2 = document.getElementById('enlace_2'); 
+      const parrafo2 = elemento2.querySelector('p'); 
+      
+      if (elemento2) {
+        elemento2.style.backgroundColor = '#1A3C69'; //Color del boton
+        parrafo2.style.color = '#FFFFFF'; // color del texto
+      } else {
+        console.log("Elemento no encontrado.");
+      }
+    }
 });
 
 //CABECERA PEGAJOSA. En desarrollo!!

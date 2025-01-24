@@ -86,7 +86,7 @@ h4{
 .enlace{
     cursor: pointer;
     text-decoration: none;
-    /*background-color: #333333;*/
+    background-color: #333333;
     height: 46px;
     display: flex;
     justify-content: center;
@@ -110,9 +110,11 @@ h4{
 .enlace_1{
     margin-right: 3%;
 }
+/*
 .enlace_2{
     
 }
+*/
 .enlace p{
     text-decoration: none;
     font-weight: bold;
