@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("Elemento no encontrado.");
       }
     }
-
    //Portafolio  
     if (window.location.href.includes('portafolio.html')) {
       const elemento2 = document.getElementById('enlace_2'); 
@@ -32,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //CABECERA PEGAJOSA. En desarrollo!!
 var header = document.getElementById('Header')
-
 window.addEventListener("scroll", function(){
     var scroll = window.scrollY;
     if(scrollY>0){
@@ -47,7 +45,6 @@ window.addEventListener("scroll", function(){
 
 //LIGH BOX
 const images = document.querySelectorAll("img[data-lightbox]");
-
 if (images) {
   // Load the lightbox
   const lightbox = document.createElement("div");
@@ -85,3 +82,41 @@ if (images) {
     document.body.classList.remove("overflow-hidden");
   });
 }
+
+//TRANSICIÓN SUAVE ENTRE PÁGINAS
+document.addEventListener('DOMContentLoaded', () => {
+  // Función para aplicar el fade-out (desvanecimiento) al main
+  function fadeOut() {
+    let mainContent = document.querySelector('main'); // Seleccionamos el main
+    mainContent.style.transition = 'opacity 0.5s ease-in-out'; // Aplicamos transición
+    mainContent.style.opacity = 0; // Hacemos que el contenido desaparezca
+  }
+
+  // Función para aplicar el fade-in (desvanecimiento inverso) al main
+  function fadeIn() {
+    let mainContent = document.querySelector('main'); // Seleccionamos el main
+    mainContent.style.transition = 'opacity 0.5s ease-in-out'; // Aplicamos transición
+    mainContent.style.opacity = 1; // Hacemos que el contenido aparezca
+  }
+
+  // Interceptamos los clics en todos los enlaces
+  document.querySelectorAll('a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault(); // Prevenir la navegación inmediata
+
+      // Ejecutamos fade-out en el main
+      fadeOut();
+
+      // Después de que termine la animación (0.5 segundos), navegamos a la nueva página
+      setTimeout(() => {
+        window.location.href = this.href; // Redirigimos a la nueva página
+      }, 500); // El tiempo de espera debe coincidir con la duración de la animación
+    });
+  });
+
+  // Cuando la nueva página se haya cargado, aplicamos el fade-in en el main
+  window.addEventListener('load', fadeIn);
+});
+
+
+
