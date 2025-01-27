@@ -137,6 +137,11 @@ li{
     p{
         margin: 2% 5%;
     }
+    img{
+        margin: 0 auto;
+        width: 90%;
+        padding: 46px 0;
+    }
     
 }
 .bloque.h1{
@@ -279,10 +284,6 @@ li{
         margin-inline-end: 0px;
         font-weight: bold;
         unicode-bidi: isolate;
-    }
-    img{
-        height: 20px;
-        margin: auto auto;
     }
     
 }
