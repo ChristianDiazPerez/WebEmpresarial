@@ -143,7 +143,6 @@ li{
         
     }
     .imagen-suelta{
-        
         width: 80%;
         display: flex;
         justify-content: center;
@@ -320,7 +319,6 @@ main{
         width: 99vw;
         
     }
-    
     .titulo-cabecera{
         grid-column: 1;
         grid-row: 1/3;
@@ -338,17 +336,16 @@ main{
     .enlace_1{
         margin-bottom: 3%;
     }
-
-        
-    
     .bloque-servicios{
         grid-template-columns: 1fr;
         
     }
-    .muestra-imagenes{
-            
+    .muestra-imagenes{  
         width: 100%;
         margin: 0 auto;
+    }
+    .imagen-suelta{
+        width: 100%;
     }
     .presentacion{
         margin-bottom: 10%;
