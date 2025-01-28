@@ -130,7 +130,7 @@ li{
     list-style: none;
 }
 
-/*BLOQUES quienes somos y portafolio*/
+/*BLOQUES*/
 .bloque{
     margin-bottom: 46px;
     padding: 1px;
@@ -140,10 +140,20 @@ li{
     img{
         margin: 0 auto;
         width: 90%;
-        padding: 46px 0;
+        
     }
-    
+    .imagen-suelta{
+        
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin: 46px auto;
+    }
 }
+
+
+    
+
 .bloque.h1{
     text-align: center;
 }
