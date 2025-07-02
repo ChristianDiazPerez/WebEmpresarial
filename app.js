@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const parrafo1 = elemento1.querySelector('p'); 
       
       if (elemento1) {
-        elemento1.style.backgroundColor = '#1A3C69'; //Color del boton
-        parrafo1.style.color = '#FFFFFF'; // color del texto
+        elemento1.style.backgroundColor = '#28527A'; //Color del boton
+        parrafo1.style.color = '#F9FAFB'; // color del texto
 
       } else {
         console.log("Elemento no encontrado.");
@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const parrafo2 = elemento2.querySelector('p'); 
       
       if (elemento2) {
-        elemento2.style.backgroundColor = '#1A3C69'; //Color del boton
-        parrafo2.style.color = '#FFFFFF'; // color del texto
+        elemento2.style.backgroundColor = '#28527A'; //Color del boton
+        parrafo2.style.color = '#F9FAFB'; // color del texto
       } else {
         console.log("Elemento no encontrado.");
       }
