@@ -207,10 +207,11 @@ li{
 .bloque-servicios{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 10px 10px;
+    
 }
 .contenedor {
-    height: auto;
-    margin: 1% 1%;
+    grid-column: auto;
 }
 .contenedor:hover{
     transition: background-color 0.3s;
@@ -218,6 +219,17 @@ li{
 }
 .contenedor{
     padding: 3%;
+}
+.bloque-iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25%;
+}
+.icono{
+    height: auto;
+    width: 60px;
+    align-self: center;
 }
 .muestra-imagenes{
  display: flex;
