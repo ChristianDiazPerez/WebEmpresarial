@@ -231,6 +231,14 @@ li{
     width: 60px;
     align-self: center;
 }
+.icono-en-texto{
+    height: 15px;
+    width: 20px;
+    object-fit: contain;
+    display: inline;
+    
+    
+}
 .muestra-imagenes{
  display: flex;
  flex-wrap: wrap;
