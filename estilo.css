@@ -233,10 +233,9 @@ li{
 }
 .icono-en-texto{
     height: 15px;
-    width: 20px;
+    width: auto !important; /*Para anular la propiedad heredada del padre (bloque)*/
     object-fit: contain;
     display: inline;
-    
     
 }
 .muestra-imagenes{
